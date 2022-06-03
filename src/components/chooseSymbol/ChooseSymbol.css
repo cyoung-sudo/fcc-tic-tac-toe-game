@@ -1,0 +1,52 @@
+#choose-symbol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  font-size: 3em;
+  font-style: italic;
+}
+
+#symbol-wrapper {
+  padding: 1em;
+  border-radius: 0.5em;
+  background-color: hsla(0, 0%, 90%, 0.5);
+  text-align: center;
+}
+
+#symbol-btns {
+  margin-top: 0.5em;
+}
+
+#choose-symbol button {
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 0.5em;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+#choose-symbol button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.symbol-btn {
+  margin: 0.5em;
+}
+
+#back-btn {
+  margin-top: 1em;
+}
+
+#back-btn span {
+  position: relative;
+  top: 0.15em;
+}
