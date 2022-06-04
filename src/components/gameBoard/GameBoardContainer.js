@@ -102,7 +102,7 @@ export default function GameBoardContainer(props) {
 
   // Start next game
   const startNextGame = async () => {
-    await timeout(3000);
+    await timeout(5000);
     dispatch(nextGame());
     // Set first player
     dispatch(setCurrentPlyr(symbol));
