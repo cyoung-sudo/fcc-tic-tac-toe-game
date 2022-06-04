@@ -27,6 +27,8 @@ To Visit App:
 
 - Application features:
     - Play tic-tac-toe with either the computer or a second player
+- Application issues:
+    - CPU winning audio won't play on mobile
 - What was the purpose of this project?
     - Practicing front-end development using the React library
     - Deploying a React app to Heroku
