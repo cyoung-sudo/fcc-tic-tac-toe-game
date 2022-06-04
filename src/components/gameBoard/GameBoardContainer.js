@@ -59,8 +59,13 @@ export default function GameBoardContainer(props) {
   useEffect(() => {
     if(gameOver !== "") {
       if(gameOver === "win") {
-        // Play win audio
-        audioW.play();
+        if(mode === 1 && currentPlyr.player === 2) {
+          // Play lose audio
+          audioL.play();
+        } else {
+          // Play win audio
+          audioW.play();
+        }
       } else {
         // Play draw audio
         audioD.play();
@@ -72,6 +77,7 @@ export default function GameBoardContainer(props) {
   // Game audios
   const audioW = new Audio("https://sampleswap.org/samples-ghost/MELODIC%20SAMPLES/SAMPLED%20MUSIC/92[kb]ballgame_start.wav.mp3");
   const audioD = new Audio("https://sampleswap.org/samples-ghost/SOUND%20EFFECTS%20and%20NOISES/Cheesy%20Lo-Fi%20Sound%20Effects/37[kb]Buzzer.wav.mp3");
+  const audioL = new Audio("https://sampleswap.org/samples-ghost/MELODIC%20SAMPLES/SAMPLED%20MUSIC/50[kb]whistle1.wav.mp3");
 
   // Handle player moves
   const moveHandler = (coord) => {
